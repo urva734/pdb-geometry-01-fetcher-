@@ -56,11 +56,8 @@ For each code, it builds URL `https://files.rcsb.org/download/{CODE}.pdb`
 If file already exists locally, it skips to save time
 Otherwise it uses `urllib.request.urlretrieve()` to download
 It saves file as lowercase name like `1aki.pdb`
-At end it counts total files and prints "Ready for Project 1-5"
-PDB files stay local only - ignored on GitHub via `*.pdb` in `.gitignore`
+At end it counts total files and prints "Ready for Project "
 
-## ⚙️ How It Works
-The program creates a list `PDB_CODES = ["1AKI", "4HHB", "1PWC"]`. For each ID, it makes RCSB URL and checks if file exists. If not, it downloads via `urllib`. It saves as lowercase `.pdb` and shows file size in KB. Finally it prints summary.
 
 ## 🔮 Future Improvements
 - [ ] Read input from `.cif` files too
