@@ -34,21 +34,22 @@ python main.py
 ## Input
 No input needed - runs automatically
 ## Output
-
+```
 downloading 1AKI from https://files.rcsb.org/download/1AKI.pdb ...
 saved -> 1aki.pdb (113 KB)
 downloading 4HHB from https://files.rcsb.org/download/4HHB.pdb ...
 saved -> 4hhb.pdb (462 KB)
 downloading 1PWC from https://files.rcsb.org/download/1PWC.pdb ...
 saved -> 1pwc.pdb (537 KB)
-
+```
 Done. Total 3 files ready for Project
 
 ## Downloaded Files
+```
 1aki.pdb - Lysozyme 129aa 1.5Å (113 KB)
 4hhb.pdb - Hemoglobin 574aa 1.74Å (462 KB)
 1pwc.pdb - DD-peptidase 1.1Å ultra high-res (537 KB)
-
+```
 ## ⚙️ How It Works
 The program loops through `PDB_CODES = ["1AKI", "4HHB", "1PWC"]`
 For each code, it builds URL `https://files.rcsb.org/download/{CODE}.pdb`
