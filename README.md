@@ -25,8 +25,10 @@ A pure-Python console tool that downloads 3 curated PDB structures needed for th
 2. Open terminal
 3. Run:
 
-```bash
-python main.py```
+```
+bash
+python main.py
+```
 
 ## 📥 Sample Input & Output
 ## Input
@@ -42,7 +44,7 @@ saved -> 1pwc.pdb (537 KB)
 
 Done. Total 3 files ready for Project
 
-Downloaded Files
+## Downloaded Files
 1aki.pdb - Lysozyme 129aa 1.5Å (113 KB)
 4hhb.pdb - Hemoglobin 574aa 1.74Å (462 KB)
 1pwc.pdb - DD-peptidase 1.1Å ultra high-res (537 KB)
