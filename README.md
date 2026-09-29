@@ -51,13 +51,12 @@ Done. Total 3 files ready for Project
 1pwc.pdb - DD-peptidase 1.1Å ultra high-res (537 KB)
 ```
 ## ⚙️ How It Works
-The program loops through `PDB_CODES = ["1AKI", "4HHB", "1PWC"]`
-For each code, it builds URL `https://files.rcsb.org/download/{CODE}.pdb`
-If file already exists locally, it skips to save time
-Otherwise it uses `urllib.request.urlretrieve()` to download
-It saves file as lowercase name like `1aki.pdb`
-At end it counts total files and prints "Ready for Project "
-
+- The program creates a list PDB_CODES = ["1AKI", "4HHB", "1PWC"]
+- For each code, it builds URL https://files.rcsb.org/download/{CODE}.pdb
+- It checks if file already exists locally - if yes, it skips to save time
+- If not, it downloads via urllib.request.urlretrieve()
+- It saves file as lowercase name like 1aki.pdb and shows size in KB
+- At end it counts total files and prints "Ready for Project "
 
 ## 🔮 Future Improvements
 - [ ] Read input from `.cif` files too
