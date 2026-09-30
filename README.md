@@ -1,6 +1,6 @@
 # 🧬 PDB Geometry 01 - Fetcher
 
-A Python console tool that downloads 3 curated PDB structures needed for the full PDB Geometry series (Projects 1-5) and generates a validation plot.
+A Python console tool that downloads 3 curated PDB structures needed for the full PDB Geometry series (Projects 1-4) and generates a validation plot.
 
 ## 👤 Author
 **Urva Sohail**
