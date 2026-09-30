@@ -22,7 +22,6 @@ A Python console tool that downloads 3 curated PDB structures needed for the ful
 1. Open folder `pdb-geometry-01-fetcher`
 2. Run in terminal:
 ```
-bash
 python main.py
 ```
 3.Output files will be created in same folder
@@ -34,7 +33,6 @@ skipped: 4hhb.pdb (already exists, 4584 ATOMs)
 skipped: 1pwc.pdb (already exists, 2661 ATOMs)
 
 Done. Total 3 files ready for Projects.
-Image saved: fetcher_plot.png -
 ```
 ## 📊 Generated Plot
 `fetcher_plot.png` shows atom counts for each structure:
