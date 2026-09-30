@@ -1,55 +1,59 @@
 # 🧬 PDB Geometry 01 - Fetcher
 
-A pure-Python console tool that downloads 3 curated PDB structures needed for the full PDB Geometry series (Projects 1-5). No external dependencies.
+A Python console tool that downloads 3 curated PDB structures needed for the full PDB Geometry series (Projects 1-5) and generates a validation plot.
 
 ## 👤 Author
 **Urva Sohail**
 
 ## ✨ Features
-- **📥 Auto Download**: Fetches 3 structures from RCSB PDB
+- **📥 Auto Download**: Fetches 3 structures from RCSB PDB (1AKI, 4HHB, 1PWC)
 - **📂 Smart Skip**: Skips file if already exists locally
-- **✅ Validation**: Checks file size after download
-- **🧹 Clean Repo**: Data files ignored via `.gitignore`
-- **🐍 Pure Python**: Only stdlib `urllib` + `pathlib`
+- **✅ Validation**: Checks ATOM count and file size after download
+- **📊 Visualization**: Generates `fetcher_plot.png` summary chart
+- **🐍 Simple Python**: Only `urllib` + `matplotlib`
 
 ## 💻 Technologies Used
-- **Python 3+**: Core programming language
+- **Python 3+**: Core language
 - **urllib.request**: For downloading from RCSB
 - **pathlib**: For file handling
-- **Console I/O**: For download progress
+- **matplotlib**: For dataset summary plot
 
 ## 🚀 How to Run
-
-### Using VS Code
-1. Open folder `pdb-geometry-01-fetcher-`
-2. Open terminal
-3. Run:
-
+1. Open folder `pdb-geometry-01-fetcher`
+2. Run in terminal:
 ```
 bash
 python main.py
 ```
+3.Output files will be created in same folder
 
-## 📥 Sample Input & Output
-## Input
-No input needed - runs automatically
-## Output
+## 📥 Sample Output
 ```
-downloading 1AKI from https://files.rcsb.org/download/1AKI.pdb ...
-saved -> 1aki.pdb (113 KB)
-downloading 4HHB from https://files.rcsb.org/download/4HHB.pdb ...
-saved -> 4hhb.pdb (462 KB)
-downloading 1PWC from https://files.rcsb.org/download/1PWC.pdb ...
-saved -> 1pwc.pdb (537 KB)
-```
-Done. Total 3 files ready for Project
+skipped: 1aki.pdb (already exists, 1001 ATOMs)
+skipped: 4hhb.pdb (already exists, 4584 ATOMs)
+skipped: 1pwc.pdb (already exists, 2661 ATOMs)
 
-## Downloaded Files
+Done. Total 3 files ready for Projects.
+Image saved: fetcher_plot.png -
+```
+## 📊 Generated Plot
+`fetcher_plot.png` shows atom counts for each structure:
+- 1AKI - 1001 atoms / 114 KB (Lysozyme - smallest)
+- 4HHB - 4584 atoms / 463 KB (Hemoglobin - tallest, 4 chains)
+- 1PWC - 2661 atoms / 538 KB (DD-peptidase - high res)
+
+The chart confirms all 3 PDBs were fetched successfully and validates file integrity by showing ATOM count vs file size.
+
+![Dataset Summary](fetcher_plot.png)
+## 📁 Downloaded Files
 ```
 1aki.pdb - Lysozyme 129aa 1.5Å (113 KB)
 4hhb.pdb - Hemoglobin 574aa 1.74Å (462 KB)
 1pwc.pdb - DD-peptidase 1.1Å ultra high-res (537 KB)
+fetcher_plot.png - Dataset summary chart
+main.py - Fetcher + plot code
 ```
+
 ## ⚙️ How It Works
 - The program creates a list PDB_CODES = ["1AKI", "4HHB", "1PWC"]
 - For each code, it builds URL https://files.rcsb.org/download/{CODE}.pdb
