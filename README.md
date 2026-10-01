@@ -1,6 +1,20 @@
 # 🧬 PDB Geometry 01 - Fetcher
 
 A Python console tool that downloads 3 curated PDB structures needed for the full PDB Geometry series (Projects 1-4) and generates a validation plot.
+# PDB Geometry Series - Python Toolkit
+A complete 4-module bioinformatics suite built in Python to parse and validate protein structures.
+
+**Validated on:** 1AKI Lysozyme (129aa, RCSB PDB)  
+**Core Focus:** Understanding protein backbone geometry from first principles.
+
+### 🧬 Series Overview - This Repo is the Master Index
+
+| No | Module | Concept Validated | Repository Link |
+| :--- | :--- | :--- | :--- |
+| 01 | **PDB Fetcher** | ATOM Record Parsing & Coordinate Extraction | This Repo |
+| 02 | Peptide Bond Calculator | C-N Peptide Bond Length (~1.33Å) | [Click Here](https://github.com/urva734/pdb-geometry-02-peptide-bond) |
+| 03 | Bond Angle Calculator | N-CA-C Bond Angle (~111°) | [Click Here](https://github.com/urva734/pdb-geometry-03-bond-angle-) |
+| 04 | Ramachandran Plotter | Phi/Psi Dihedral Angles via Vector Math | [Click Here](https://github.com/urva734/pdb-geometry-04-ramachandran) |
 
 ## 👤 Author
 **Urva Sohail**
