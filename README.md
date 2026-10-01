@@ -7,7 +7,7 @@ A complete 4-module bioinformatics suite built in Python to parse and validate p
 **Validated on:** 1AKI Lysozyme (129aa, RCSB PDB)  
 **Core Focus:** Understanding protein backbone geometry from first principles.
 
-### 🧬 Series Overview - This Repo is the Master Index
+### 🧬 Series Overview - 
 
 | No | Module | Concept Validated | Repository Link |
 | :--- | :--- | :--- | :--- |
