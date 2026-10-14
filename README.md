@@ -8,7 +8,6 @@ A complete 4-module bioinformatics suite built in Python to parse and validate p
 **Core Focus:** Understanding protein backbone geometry from first principles.
 
 ### 🧬 Series Overview - 
-
 | No | Module | Concept Validated | Repository Link |
 | :--- | :--- | :--- | :--- |
 | 01 | **PDB Fetcher** | ATOM Record Parsing & Coordinate Extraction | This Repo |
